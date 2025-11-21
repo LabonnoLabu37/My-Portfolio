@@ -15,13 +15,7 @@ form.addEventListener("submit", (e) => {
   setTimeout(() => msg.classList.add("hidden"), 4000);
 });
 
-// Project link demo
-// document.querySelectorAll(".project-link").forEach((a) => {
-//   a.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     alert("This is a demo. Replace this link with your actual project URL.");
-//   });
-// });
+
 
 // Auto update footer year dynamically
 document.getElementById("year").textContent = new Date().getFullYear();

@@ -6,9 +6,13 @@
   --accent1: #5eead4;
   --accent2: #8b5cf6;
 }
+footer {
+  background-color: var(--darkbg);
+  width: 100%;
+}
 
 body {
-  background-color: var(--darkbg);
+  background-color:var(--darkbg)
 }
 
 .hero-card {
