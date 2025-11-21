@@ -1,256 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio — Taherun Nesa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taherun Nesa Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="style.css" rel="stylesheet">
 </head>
+<body class="bg-[#0f1724] text-slate-300 antialiased">
 
+<main class="min-h-screen flex flex-col items-center">
 
-<body class="bg-darkbg text-slate-300 antialiased" style="background-color: #0f1724;">
-  <main class="min-h-screen flex flex-col items-center">
-    <!-- Header -->
-    <header class="w-full max-w-3xl mt-8">
-      <div class="hero-card">
-        <div class="p-8 text-center">
-          <div class="flex justify-center">
-            <img src="passportsizepicturemine.jpg" alt="profile" class="profile-img rounded-full" />
+  <!-- Header / Profile -->
+  <header class="w-full max-w-3xl mt-8 mx-auto">
+    <div class="bg-gradient-to-b from-[#0b1220] to-[#0f1724] rounded-2xl shadow-lg overflow-hidden p-8 text-center">
+      <div class="flex justify-center">
+        <img src="passportsizepicturemine.jpg" 
+             alt="profile" 
+             class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full border-4 border-gray-800 object-cover" />
+      </div>
+      <h1 class="mt-4 text-2xl font-semibold text-white">Taherun Nesa</h1>
+      <p class="text-sm text-slate-400 mt-1">Frontend Developer</p>
+      <p class="mt-4 text-xs text-slate-400 max-w-xl mx-auto">
+        I'm a Frontend Developer who has completed a MERN Stack course from BD Calling Academy. I have hands-on experience working with React and Tailwind CSS. I build accessible and elegant web experiences.
+      </p>
 
-          </div>
-          <h1 class="mt-4 text-2xl font-semibold text-white">Taherun Nesa</h1>
-          <p class="text-sm text-slate-400 mt-1">Frontend Developer</p>
-          <p class="mt-4 text-xs text-slate-400 max-w-xl mx-auto">
-             I'm a Frontend Developer who has completed a MERN Stack course from BD
-          Calling Academy. I have hands-on experience working with React and
-          Tailwind CSS. I'm passionate about clean design and love working in a
-          team-oriented environment.  I build exceptional and accessible digital experiences for the web.
-            Focused on creating elegant solutions to complex problems.
+      <!-- Skills -->
+      <div class="border-t border-slate-700/40 p-6 mt-6">
+        <h3 class="text-center text-white text-lg font-medium">Skills & Technologies</h3>
+        <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">HTML</span>
+          <span class="skill">Next.js</span>
+          <span class="skill">TailwindCSS</span>
+          <span class="skill">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section class="w-full max-w-5xl mt-10 px-4">
+    <h2 class="text-center text-white text-xl font-semibold">Featured Projects</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <article class="project-card">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('trafalger.png');"></div>
+        <div class="p-4">
+          <h3 class="text-white font-medium">Trafalger</h3>
+          <p class="text-sm text-slate-400 mt-2">
+            Responsive healthcare landing page built using HTML, CSS & JS.
           </p>
-        </div>
-
-        <div class="border-t border-slate-700/40 p-6">
-          <h3 class="text-center text-white text-lg font-medium">Skills & Technologies</h3>
-          <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <span class="skill">JavaScript</span>
-            
-            <span class="skill">React</span>
-            <span class="skill">Html</span>
-            <span class="skill">Next.js</span>
-            <span class="skill">TailwindCSS</span>
-            
-           
-            <span class="skill">Github</span>
+          <div class="mt-3 flex items-center justify-between">
+            <a href="https://labonnolabu37.github.io/Trafalger/" target="_blank" class="text-sky-400 text-sm underline">View Project →</a>
+            <div class="text-xs text-slate-500">JS • Tailwind</div>
           </div>
         </div>
-      </div>
-    </header>
+      </article>
 
-    <!-- Projects -->
-    <section class="w-full max-w-5xl mt-10 px-4">
-      <h2 class="text-center text-white text-xl font-semibold">Featured Projects</h2>
-      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-        <article class="project-card">
-  <div class="h-48 bg-cover bg-center rounded-t-lg" 
-       style="background-image: url('trafalger.png');"></div>
-  <div class="p-4">
-    <h3 class="text-white font-medium">Trafalger</h3>
-    <p class="text-sm text-slate-400 mt-2">
-      Responsive healthcare landing page built using HTML, CSS & JS.
-      Includes animated buttons and responsive navbar.
-    </p>
-    <div class="mt-3 flex items-center justify-between">
-      <a href="https://labonnolabu37.github.io/Trafalger/" class="project-link">View Project →</a>
-      <div class="text-xs text-slate-500">js • Tailwind</div>
-    </div>
-  </div>
-</article>
-
-
-        <article class="project-card">
-          <div class="h-48 bg-cover bg-center rounded-t-lg" 
-       style="background-image: url('portfolio2.png');"></div>
-          <div class="p-4">
-            <h3 class="text-white font-medium">Responsive portfolio</h3>
-            <p class="text-sm text-slate-400 mt-2">
-              A responsive portfolio website.
-Showcases my skills, projects, and contact information.
-Fully optimized for both mobile and desktop devices..
-            </p>
-            <div class="mt-3 flex items-center justify-between">
-              <a href="https://labonnolabu37.github.io/responsiveprotfolio/" class="project-link">View Project →</a>
-              <div class="text-xs text-slate-500">js • tailwindcss</div>
-            </div>
+      <article class="project-card">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('portfolio2.png');"></div>
+        <div class="p-4">
+          <h3 class="text-white font-medium">Responsive Portfolio</h3>
+          <p class="text-sm text-slate-400 mt-2">
+            A responsive portfolio website showcasing my skills, projects, and contact info.
+          </p>
+          <div class="mt-3 flex items-center justify-between">
+            <a href="https://labonnolabu37.github.io/responsiveprotfolio/" target="_blank" class="text-sky-400 text-sm underline">View Project →</a>
+            <div class="text-xs text-slate-500">JS • TailwindCSS</div>
           </div>
-        </article>
+        </div>
+      </article>
 
-       
-       
-        <article class="project-card">
-           <div class="h-48 bg-cover bg-center rounded-t-lg"
-       style="background-image: url('lba.png');">
-  </div>
-  <div class="p-4">
-    <h3 class="text-white font-medium">E-commerce website</h3>
-    <p class="text-sm text-slate-400 mt-2">
-      An e-commerce website for Labonno's Beauty Area, showcasing skincare and beauty products. 
-      Features product listings, search, and a responsive design for desktop and mobile users.
-      Includes cart functionality and easy navigation for a seamless shopping experience.
-    </p>
-    <div class="mt-3 flex items-center justify-between">
-      <a href="https://labonnolabu37.github.io/beauty-area/" 
-         target="_blank" 
-         class="project-link">
-        View Project →
-      </a>
-      <div class="text-xs text-slate-500">js • CSS</div>
-    </div>
-  </div>
-</article>
-
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="w-full max-w-3xl mt-12 px-4 mb-12">
-      <div class="contact-card">
-        <h2 class="text-center text-white text-lg font-semibold">Contact</h2>
-        <p class="text-center text-slate-400 text-sm mt-2">
-          Interested in working together? Let's have a conversation.
-        </p>
-
-        <form id="contactForm" class="mt-6 max-w-lg mx-auto space-y-4">
-          <input required name="name" placeholder="Name" class="input-field" />
-          <input required type="email" name="email" placeholder="Email" class="input-field" />
-          <textarea required name="message" rows="5" placeholder="Message" class="input-field"></textarea>
-          <div class="flex items-center gap-3">
-            <button type="submit" class="send-btn">Send Message</button>
-            <a href="file:///C:/Users/Labonno/Downloads/Blue%20and%20Cream%20Minimalist%20CV%20Resume%20A4%20(1).pdf%20(2).pdf" class="resume-btn">View Resume</a>
+      <article class="project-card">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('lba.png');"></div>
+        <div class="p-4">
+          <h3 class="text-white font-medium">E-commerce Website</h3>
+          <p class="text-sm text-slate-400 mt-2">
+            E-commerce website for Labonno's Beauty Area. Features responsive design, product listings, and cart functionality.
+          </p>
+          <div class="mt-3 flex items-center justify-between">
+            <a href="https://labonnolabu37.github.io/beauty-area/" target="_blank" class="text-sky-400 text-sm underline">View Project →</a>
+            <div class="text-xs text-slate-500">JS • CSS</div>
           </div>
-        </form>
-        <p id="formMsg" class="form-msg hidden"></p>
-      </div>
-    </section>
+        </div>
+      </article>
 
-    <footer class="w-full text-center py-10 px-4 bg-[#0f172a] text-slate-400 text-sm">
-  <!-- Footer top line -->
-  <div>© <span id="year"></span> Taherun Nesa — Built with ❤️</div>
+    </div>
+  </section>
 
-  
-  <!-- Social Icons -->
-<div class="flex justify-center space-x-4 mt-6">
+  <!-- Contact Section -->
+  <section class="w-full max-w-3xl mt-12 px-4 mb-12 mx-auto">
+    <div class="bg-gradient-to-b from-[#0b1220] to-[#0f1724] p-8 rounded-2xl border border-gray-700 shadow-lg">
+      <h2 class="text-center text-white text-lg font-semibold">Contact</h2>
+      <p class="text-center text-slate-400 text-sm mt-2">
+        Interested in working together? Let's have a conversation.
+      </p>
 
-  <!-- GitHub -->
-  <a href="https://github.com/LabonnoLabu37" target="_blank"
-     class="icon-style hover:text-white">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-         viewBox="0 0 24 24" class="w-5 h-5 md:w-6 md:h-6">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 
-        11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.015-2.06
-        -3.338.73-4.04-1.61-4.04-1.61-.546-1.38-1.334-1.75
-        -1.334-1.75-1.09-.75.083-.73.083-.73 1.205.08 1.84 
-        1.25 1.84 1.25 1.07 1.84 2.8 1.31 3.485 1 
-        .11-.78.42-1.31.76-1.61-2.665-.31-5.466-1.33
-        -5.466-5.93 0-1.31.47-2.38 1.235-3.22-.125-.31
-        -.54-1.56.115-3.25 0 0 1.01-.32 3.3 1.23A11.5 
-        11.5 0 0112 6.84a11.5 11.5 0 012.995.4c2.29-1.55 
-        3.3-1.23 3.3-1.23.655 1.69.24 2.94.12 3.25.77.84 
-        1.235 1.91 1.235 3.22 0 4.61-2.805 5.62-5.475 
-        5.93.43.37.82 1.1.82 2.22 0 1.61-.015 2.91-.015 
-        3.3 0 .32.21.7.825.58A12.02 12.02 0 0024 12c0-6.63
-        -5.37-12-12-12z"/>
-    </svg>
-  </a>
+      <form id="contactForm" class="mt-6 max-w-lg mx-auto space-y-4">
+        <input required name="name" placeholder="Name" class="input-field" />
+        <input required type="email" name="email" placeholder="Email" class="input-field" />
+        <textarea required name="message" rows="5" placeholder="Message" class="input-field"></textarea>
+        <div class="flex flex-col sm:flex-row items-center gap-3">
+          <button type="submit" class="send-btn">Send Message</button>
+          <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+        </div>
+      </form>
 
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/taherun-nesa-labu-0533a5398" target="_blank"
-     class="icon-style hover:text-[#0A66C2]">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-         viewBox="0 0 24 24" class="w-5 h-5 md:w-6 md:h-6">
-      <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 
-      4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 
-      2.5zM.5 8h4v16h-4V8zm7.5 0h3.83v2.16h.05c.53-1.01 
-      1.84-2.08 3.79-2.08C20.23 8.08 24 10.64 24 
-      16.07V24h-4v-7.31c0-1.74-.03-3.98-2.42-3.98
-      -2.43 0-2.8 1.9-2.8 3.86V24h-4V8z"/>
-    </svg>
-  </a>
+      <p id="formMsg" class="form-msg hidden"></p>
+    </div>
+  </section>
 
-  <!-- Gmail -->
-  <a href="mailto:taherunnesa06@gmail.com"
-     class="icon-style hover:text-[#ea4335]">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-         viewBox="0 0 24 24" class="w-5 h-5 md:w-6 md:h-6">
-      <path d="M20 4H4C2.9 4 2 4.9 2 
-      6v12c0 1.1.9 2 2 2h16c1.1 
-      0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
-      4l-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-  </a>
+  <!-- Footer -->
+  <footer class="w-full text-center py-10 px-4 bg-[#0f1724] text-slate-400 text-sm">
+    <div>© <span id="year"></span> Taherun Nesa — Built with ❤️</div>
+  </footer>
 
-  <!-- WhatsApp -->
-  <a href="https://wa.me/8801894686137?text=Hello%20Taherun,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
-     target="_blank"
-     class="icon-style hover:text-green-500">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-         viewBox="0 0 24 24" class="w-5 h-5 md:w-6 md:h-6">
-      <path d="M20.52 3.48A11.82 11.82 0 0012 
-      0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.68 
-      6.06L0 24l6.18-1.63A11.88 11.88 0 0012 
-      24c6.63 0 12-5.37 12-12 0-3.18-1.24-6.18
-      -3.48-8.52zM12 22a9.9 9.9 0 01-5.05-1.42
-      l-.36-.22-3.67.97.98-3.58-.24-.38A9.86 
-      9.86 0 012 12C2 6.48 6.48 2 12 
-      2c2.66 0 5.18 1.04 7.07 2.93A9.93 9.93 
-      0 0122 12c0 5.52-4.48 10-10 
-      10zm5.2-7.8c-.28-.14-1.65-.81-1.9-.9-.25-.1
-      -.43-.14-.6.14-.17.28-.69.9-.85 
-      1.08-.16.18-.3.2-.58.07-.28-.14-1.17-.43
-      -2.23-1.37-.82-.73-1.37-1.63-1.53-1.9
-      -.16-.28-.02-.43.12-.57.12-.12.28-.32.42
-      -.48.14-.16.18-.28.28-.47.1-.18.05-.34
-      -.02-.48-.07-.14-.6-1.44-.82-1.97-.22-.53
-      -.44-.46-.6-.46h-.52c-.18 0-.48.07-.73.34
-      -.25.28-.96.94-.96 2.3s.98 2.66 1.12 
-      2.85c.14.18 1.92 2.93 4.7 4.11.66.28 1.17.45
-      1.57.58.66.21 1.26.18 1.74.11.53-.08 1.65-.67 
-      1.88-1.33.23-.65.23-1.2.16-1.33-.07-.14-.25
-      -.2-.53-.34z"/>
-    </svg>
-  </a>
+</main>
 
-
-  <!-- Facebook -->
-<a href="https://www.facebook.com/profile.php?id=61579527957478" target="_blank"
-   class="icon-style hover:text-blue-500">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-       viewBox="0 0 24 24" class="w-5 h-5 md:w-6 md:h-6">
-    <path d="M22.675 0H1.325C.593 0 0 .593 0 
-    1.325v21.351C0 23.407.593 24 1.325 
-    24h11.494v-9.294H9.691v-3.622h3.128V8.413c0-3.1 
-    1.893-4.788 4.659-4.788 1.325 0 2.463.099 
-    2.794.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 
-    1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 
-    24 24 23.407 24 22.675V1.325C24 .593 23.407 0 
-    22.675 0z"/>
-  </svg>
-</a>
-
-
-</div>
-
-
-  <!-- Footer bottom -->
-  <div class="mt-8 text-xs text-slate-500">
-    Designed by Taherun Nesa | 
-  </div>
-</footer>
-
-  </main>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
