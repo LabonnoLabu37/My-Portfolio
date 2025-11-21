@@ -91,26 +91,77 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="w-full max-w-3xl mt-12 px-4 mb-12 mx-auto">
-    <div class="bg-gradient-to-b from-[#0b1220] to-[#0f1724] p-8 rounded-2xl border border-gray-700 shadow-lg">
-      <h2 class="text-center text-white text-lg font-semibold">Contact</h2>
-      <p class="text-center text-slate-400 text-sm mt-2">
-        Interested in working together? Let's have a conversation.
-      </p>
+  <!-- Contact Section -->
+<section class="w-full max-w-3xl mt-12 px-4 mx-auto">
+  <div class="bg-gradient-to-b from-[#0b1220] to-[#0f1724] p-8 rounded-2xl border border-gray-700 shadow-lg">
+    
+    <h2 class="text-center text-white text-lg font-semibold">Contact</h2>
+    <p class="text-center text-slate-400 text-sm mt-2">
+      Interested in working together? Let's have a conversation.
+    </p>
 
-      <form id="contactForm" class="mt-6 max-w-lg mx-auto space-y-4">
-        <input required name="name" placeholder="Name" class="input-field" />
-        <input required type="email" name="email" placeholder="Email" class="input-field" />
-        <textarea required name="message" rows="5" placeholder="Message" class="input-field"></textarea>
-        <div class="flex flex-col sm:flex-row items-center gap-3">
-          <button type="submit" class="send-btn">Send Message</button>
-          <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
-        </div>
-      </form>
+    <form id="contactForm" class="mt-6 max-w-lg mx-auto space-y-4">
 
-      <p id="formMsg" class="form-msg hidden"></p>
-    </div>
-  </section>
+      <!-- Name -->
+      <input 
+        required 
+        name="name" 
+        placeholder="Name"
+        class="w-full px-4 py-3 rounded-xl bg-gray-800 text-white placeholder-slate-400
+               border border-gray-600 focus:outline-none focus:ring-2 
+               focus:ring-blue-500 focus:border-blue-500 transition"
+      />
+
+      <!-- Email -->
+      <input 
+        required 
+        type="email"
+        name="email" 
+        placeholder="Email"
+        class="w-full px-4 py-3 rounded-xl bg-gray-800 text-white placeholder-slate-400
+               border border-gray-600 focus:outline-none focus:ring-2 
+               focus:ring-blue-500 focus:border-blue-500 transition"
+      />
+
+      <!-- Message -->
+      <textarea 
+        required 
+        name="message" 
+        rows="5" 
+        placeholder="Message"
+        class="w-full px-4 py-3 rounded-xl bg-gray-800 text-white placeholder-slate-400
+               border border-gray-600 focus:outline-none focus:ring-2 
+               focus:ring-blue-500 focus:border-blue-500 transition resize-none"
+      ></textarea>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+
+        <!-- Send Message -->
+        <button 
+          type="submit" 
+          class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white 
+                 font-medium px-6 py-3 rounded-xl transition">
+          Send Message
+        </button>
+
+        <!-- View Resume -->
+        <a 
+          href="resume.pdf" 
+          target="_blank" 
+          class="w-full sm:w-auto text-center bg-gray-700 hover:bg-gray-600 
+                 text-white font-medium px-6 py-3 rounded-xl transition">
+          View Resume
+        </a>
+
+      </div>
+
+    </form>
+
+    <p id="formMsg" class="form-msg hidden"></p>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="w-full text-center py-10 px-4 bg-[#0f1724] text-slate-400 text-sm">
